@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Garotos de Programa SA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./FaleConosco.html">Fale Conosco</a></li>
+            <li><a href="./Filiais.html">Filiais</a></li>
+            <li><a href="./Parceiros.html">Parceiros</a></li>
+            <li><a href="./Produtos.html">Produtos</a></li>
+            <li><a href="./Contatos.html">Contatos</a></li>
+            <li><a href="./Cadastro.html">Cadastrar</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Garotos de Programa</h1>
+    </header>
+
+    <main class="container">
+        <form action="#" method="GET">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="inputP">
+                        <label for="nomeFantasia">Nome Fantasia</label>
+                        <input id="nomeFantasia" name="nomeFantasia" type="text" required autocomplete="false">
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <div class="inputP">
+                        <label for="cnpj">CNPJ</label>
+                        <input id="cnpj" name="cnpj" type="text" required autocomplete="false">
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <div class="inputP">
+                        <label for="rzSocial">Razão Social</label>
+                        <input id="rzSocial" name="rzSocial" type="text" required autocomplete="false">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="inputP">
+                        <label for="inscEstadual">Inscrição Estadual</label>
+                        <input id="inscEstadual" name="inscEstadual" type="number" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-1">
+                    <div class="inputP">
+                        <label for="nrFiliais">Filiais</label>
+                        <input id="nrFiliais" name="nrFiliais" value="1" min="0" max="10" type="number">
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="inputP">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="telefone" type="tel" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="inputP">
+                        <label for="nomeContato">Nome de contato</label>
+                        <input id="nomeContato" name="nomeContato" type="text" required autocomplete="false">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="inputP">
+                        <label for="dataFundacao">Data de fundação</label>
+                        <input id="dataFundacao" name="dataFundacao" type="date" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-1">
+                    <div class="inputP">
+                        <label for="corFachada">Fachada</label>
+                        <input id="corFachada" name="corFachada" type="color" required>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                    <div class="inputP">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option>Selecione</option>
+                            <option value="1">Espirito Santo</option>
+                            <option value="2">Minas Gerais</option>
+                            <option value="3">São Paulo</option>
+                            <option value="4">Rio de Janeiro</option>
+                            <option value="5">Santa Catarina</option>
+                            <option value="6">Paraná</option>
+                            <option value="7">Acre</option>
+                            <option value="8">Tocantis</option>
+                            <option value="9">Rio Grande de Sul</option>
+                            <option value="10">Bahia</option>
+                        </select required>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                    <div class="inputP">
+                        <label for="cidade">Cidade</label>
+                        <select name="cidade" id="cidade">
+                            <option>Selecione</option>
+                            <option value="1">Vitória</option>
+                            <option value="2">Belo Horizonte</option>
+                            <option value="3">São Paulo</option>
+                            <option value="4">Rio de Janeiro</option>
+                            <option value="5">Florianópolis</option>
+                            <option value="6">Curitiba</option>
+                            <option value="7">Rio Branco</option>
+                            <option value="8">Palmas</option>
+                            <option value="9">Porto Alegre</option>
+                            <option value="10">Salvador</option>
+                        </select required>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="inputP">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required autocomplete="false">
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="inputP">
+                        <label for="usuario">Usuario</label>
+                        <input id="usuario" name="usuario" type="text" required autocomplete="false">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="inputP">
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" type="password" required>
+                    </div>
+                </div>
+                
+            </div>            
+
+            <input type="submit" class="botao" value="Cadastrar">
+
+        </form>
+    </main>
+
+    <article id="wrap">
+        <article id="lightings">
+            <section id="one">
+                <section id="two">
+                    <section id='three'>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </article>
+
+    
+    <footer>
+        2020 © Joao Pedro Calixto
+    </footer>
+</body>
